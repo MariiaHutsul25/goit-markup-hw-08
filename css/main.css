@@ -24,7 +24,7 @@
   height: 4px;
   background-color: var(--accent-text-color);
   border-radius: 2px;
-  top: 47px;
+  top: 35px;
 }
 
 a {
@@ -72,7 +72,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -569,11 +569,6 @@ body {
 
 .box-photo {
   background-color: var(--titel-background-color);
-}
-
-.list-work {
-  display: flex;
-  justify-content: space-between;
 }
 
 .team-description {
