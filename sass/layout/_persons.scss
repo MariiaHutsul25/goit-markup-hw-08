@@ -1,5 +1,5 @@
 .box-photo {
-  background-color: var(--titel-background-color);
+  background-color: var($titel-background-color);
 }
 .list-work {
   display: flex;
@@ -8,10 +8,10 @@
 .team-description {
   padding: 30px 0px;
   text-align: center;
-  border: 1px solid var(--white-text-color);
+  border: 1px solid var($white-text-color);
 }
 .feature-list-name {
-  color: var(--titel-text-color);
+  color: var($titel-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.27;
@@ -23,7 +23,7 @@
   line-height: 1.19;
 }
 .item-work {
-  background-color: var(--primary-background-color);
+  background-color: var($primary-background-color);
   border-radius: 0px 0px 4px 4px;
 }
 .list-person {
@@ -43,13 +43,13 @@
   border-radius: 50%;
   color: #afb1b8;
   &:hover {
-  background-color: var(--accent-text-color);
-  color: var(--white-text-color);
-}
+    background-color: var($accent-text-color);
+    color: var($white-text-color);
+  }
 }
 .icon-person {
   fill: currentColor;
   &:hover {
-  color: var(--white-text-color);
-}
+    color: var($white-text-color);
+  }
 }

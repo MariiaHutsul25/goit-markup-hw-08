@@ -1,15 +1,15 @@
 .footer-fon {
-  background: var(--hero-background-color);
+  background: var($hero-background-color);
   padding: 60px 0px;
 }
 .footer-logo {
-  color: var(--accent-text-color);
+  color: var($accent-text-color);
   font-family: Raleway, sans-seri;
   font-size: 28px;
   line-height: 1.19;
 }
 .accent-text {
-  color: var(--white-text-color);
+  color: var($white-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -19,7 +19,7 @@
   display: inline;
   margin-top: 20px;
   margin-bottom: 9px;
-  color: var(--white-text-color);
+  color: var($white-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.41;
@@ -38,7 +38,7 @@
 }
 .contacts:hover,
 .contacts:focus {
-  color: var(--accent-text-color);
+  color: var($accent-text-color);
 }
 
 .footer-position {
@@ -56,7 +56,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-text-color);
+  color: var($white-text-color);
   margin-bottom: 20px;
 }
 
@@ -67,16 +67,14 @@
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--white-text-color);
+  color: var($white-text-color);
   border-radius: 50%;
   &:hover {
-  background-color: var(--accent-text-color);
-}
+    background-color: var($accent-text-color);
+  }
 }
 
 .footer-list {
   display: flex;
   gap: 10px;
 }
-
-

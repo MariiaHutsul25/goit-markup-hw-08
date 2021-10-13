@@ -15,18 +15,18 @@
   cursor: pointer;
   border: none;
   transition-property: background-color, color, box-shadow;
-  transition-timing-function: var(--timing-function);
+  transition-timing-function: var($timing-function);
   transition-duration: 250ms;
-            &:hover,
-            &:focus{
-            color: var(--white-text-color);
-            background: var(--accent-text-color);
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.63;
-            text-align: center;
-            }
-            &:not(:nth-child(5n)) {
-  margin-right: 8px;
-}
+  &:hover,
+  &:focus {
+    color: var($white-text-color);
+    background: var($accent-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+  }
+  &:not(:nth-child(5n)) {
+    margin-right: 8px;
+  }
 }
