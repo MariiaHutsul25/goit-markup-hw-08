@@ -1,0 +1,204 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.header__ {
+  &container {
+    display: flex;
+    @media screen and (max-width: 1199px) {
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+  &logo {
+    color: #000000;
+    align-self: center;
+    @media screen and (max-width: 767px) {
+      padding: 15px 0;
+    }
+  }
+  &logo--blue {
+    color: #2196f3;
+  }
+
+  &mobile-menu {
+    @media screen and (max-width: 767px) {
+      transform: translateX(100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      padding: 48px 40px;
+      background-color: #ffffff;
+      z-index: 999;
+    }
+    &.is-open {
+      transform: translateX(0);
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &mobile-open-btn {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &mobile-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &nav {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 300px;
+    }
+  }
+
+  &nav-list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 85px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+      margin-right: 280px;
+    }
+  }
+
+  &nav-item {
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &nav-link {
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+      line-height: calc(47 / 40);
+    }
+    &.active {
+      color: #2196f3;
+    }
+  }
+
+  &contacts {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+      margin-bottom: 64px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+    }
+  }
+
+  &contacts &contacts-link + &contacts-link {
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
+  }
+
+  &contacts-link {
+    color: #757575;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &contacts-link-mail {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: calc(28 / 24);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &contacts-link-phone {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+      font-size: 34px;
+      line-height: calc(40 / 34);
+      color: #2196f3;
+    }
+  }
+
+  &contacts-icon {
+    margin-right: 10px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &social-link-list {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &social-link-item {
+    display: flex;
+    &:not(:last-child)::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  &social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}

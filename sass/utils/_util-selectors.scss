@@ -1,52 +1,85 @@
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+.link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primary-headers-color;
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
+
 .active {
   @media screen and (min-width: $tablet) {
     position: relative;
-    color: var($accent-text-color);
+    color: $accent-color;
     &::after {
       display: block;
       position: absolute;
       content: "";
       width: 100%;
       height: 4px;
-      background-color: var($accent-text-color);
+      background-color: $accent-color;
       border-radius: 2px;
-      top: 30px;
+      top: 47px;
     }
   }
 }
-.is-hidden {
-  opacity: 1;
-  pointer-events: none;
-  visibility: hidden;
-}
-.button {
-  min-width: 200px;
-  display: block;
-  border-radius: 4px;
-  margin: 0 auto;
-  padding: 10px 32px;
+
+.btn {
   font-family: Roboto;
-  color: var($white-text-color);
-  background-color: var($accent-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  border: none;
+  background-color: $accent-color;
+  color: $white-color;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
   border-style: none;
+  min-width: 200px;
   transition-property: background-color, color;
   transition-duration: 250ms;
-  transition-timing-function: var($timing-function);
+  transition-timing-function: $timing-function;
   &:hover,
   &:focus {
-    background-color: var($white-text-color);
-    color: var($accent-text-color);
+    background-color: $white-color;
+    color: $accent-color;
   }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: $primary-headers-color;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.checkbox:checked ~ .modal__agreement-text {
+  color: black;
+}
+
+.checkbox:checked + .modal__checkbox-icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url(../images/full-check.svg);
+  background-size: contain;
+  background-origin: content-box;
 }

@@ -6,8 +6,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.2);
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.2);
+  }
 }
